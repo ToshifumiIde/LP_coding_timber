@@ -1,0 +1,17 @@
+////////
+//共通//
+////////
+
+html {
+  font-size: 62.5%;
+  font-family: serif;
+}
+
+@function get_vw($size, $viewport: 375) {
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}
+
+@mixin font-size_vw($font_size: 10) {
+  font-size: get_vw($font_size);
+}

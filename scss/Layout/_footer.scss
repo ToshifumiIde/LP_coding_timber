@@ -1,0 +1,21 @@
+@import "../mixin";
+
+footer {
+  @include sp {
+    height: 7.8rem;
+  }
+  @include pc {
+    height: 19.2rem;
+  }
+  background-color: $footerBgc;
+  color: #fff;
+  position: relative;
+  .copyright {
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    line-height: 7.8rem;
+    text-align: center;
+  }
+}

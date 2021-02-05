@@ -1,0 +1,12 @@
+@import "../mixin";
+
+.l-header {
+  @include sp {
+    height: 100%;
+  }
+  @include pc {
+    height: 64px;
+  }
+  background-color: tomato;
+  width: 100%;
+}
