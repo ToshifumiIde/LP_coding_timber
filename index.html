@@ -12,24 +12,32 @@
   </head>
   <body>
     <header class="l-header">
-      <h1>
-        <img src="./images/logo.png" alt="">
-      </h1>
-      <div id="js-ham" class="header_ham">
-        <span class="hamLine js-hamLine1"></span>
-        <span class="hamLine js-hamLine2"></span>
-        <span class="hamLine js-hamLine3"></span>
-      </div>
       <div class="">
-        <h2 class="header_">
-          日本の、
-          <br />
-          いちばん暮らしやすい
-          <br />
-          木の家へ。
-        </h2>
+        <div class="l-header_first">
+          <h1>
+            <img
+              class="l-header_logo"
+              src="./images/logo.png"
+              alt="timber-wood-logo"
+            />
+          </h1>
+          <div id="js-ham" class="l-header_ham">
+            <span class="hamLine js-hamLine1"></span>
+            <span class="hamLine js-hamLine2"></span>
+            <span class="hamLine js-hamLine3"></span>
+          </div>
+        </div>
+        <div class="l-header_second">
+          <h2 class="l-header_title">
+            日本の、
+            <br />
+            いちばん暮らしやすい
+            <br />
+            木の家へ。
+          </h2>
+        </div>
       </div>
-      <div class="">
+      <div class="l-header_nav_pc">
         <nav>
           <ul class="">
             <li class="c-button"><a href="#">お問い合わせ</a></li>
@@ -43,50 +51,53 @@
     </header>
     <main>
       <section></section>
-      <section>
-        <div class="">
-          <div class="c-subTitle">
-            <h2 class="c-subTitle_title">耳で建てる家。</h2>
-            <h3 class="c-subTitle_detail">コンセプト</h3>
-          </div>
+      <div class="l-">
+        <div class="u-">
+          <section class="p-content p-content_section1 u-mb_10">
+            <div class="c-title">
+              <h3 class="c-title_subTitle">耳で建てる家。</h3>
+              <h2 class="c-title_title">コンセプト</h2>
+            </div>
+          </section>
+          <section class="p-content p-content_section2 u-mb_10">
+            <div class="c-title">
+              <h3 class="c-title_subTitle">世代をまたぐ年輪</h3>
+              <h2 class="c-title_title">材質のこだわり</h2>
+            </div>
+          </section>
+          <section class="p-content p-content_section3 u-mb_10">
+            <div class="c-title">
+              <h3 class="c-title_subTitle">薫る空間での一息。</h3>
+              <h2 class="c-title_title">過ごし方</h2>
+            </div>
+          </section>
+          <section class="p-content p-content_section4 u-mb_10">
+            <div class="c-title">
+              <h3 class="c-title_subTitle">「唯一」を探す。</h3>
+              <h2 class="c-title_title">製品紹介</h2>
+            </div>
+          </section>
         </div>
-        <div class="">
-          <div class="c-subTitle">
-            <h2 class="c-subTitle_title">世代をまたぐ年輪</h2c-subTitle_title>
-            <h3 class="c-subTitle_detail">材質のこだわり</h3>
-          </div>
-        </div>
-        <div class="">
-          <div class="c-subTitle">
-            <h2 class="c-subTitle_title">薫空間での一息。</h2>
-            <h3 class="c-subTitle_detail">過ごし方</h3>
-          </div>
-        </div>
-        <div class="">
-          <div class="c-subTitle">
-            <h2 class="c-subTitle_title">「唯一」を探す。</h2>
-            <h3 class="c-subTitle_detail">製品紹介</h3>
-          </div>
-        </div>
-      </section>
-      <section>
+      </div>
+      <section class="l-">
         <h2>
           ご相談、お問い合わせは
           <br class="br_sp" />
           お問い合わせフォームから
         </h2>
-        <a href="#">
-          <div class="c-contact">お問い合わせ</div>
-        </a>
+        <!-- <div class="c-contact"> -->
+        <a href="#" class="c-contact"> お問い合わせ </a>
+        <!-- </div> -->
       </section>
     </main>
-    <footer>
+    <footer class="l-footer">
       <p class="copyright">COPYRIGHT©️ TIMBERWOOD ALLRIGHTS RESERVED</p>
     </footer>
-    <div class="c-pagetop">
-      <a href="#">
-        <img class="c-pagetop_arrow" src="./images/arrow02.png" alt="pagetop" />
+    <div>
+      <a href="#" id="js-pagetop" class="c-pageTop">
+        <img class="c-pageTop_arrow" src="./images/arrow02.png" alt="pageTop" />
       </a>
     </div>
+    <script src="./js/main.js"></script>
   </body>
 </html>

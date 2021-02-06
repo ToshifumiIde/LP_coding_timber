@@ -14,18 +14,20 @@
   }
 }
 
-.c-subTitle {
-  // background-color: rgba(255, 255, 255, 0.5);
-  background-color: skyblue;
+.c-title {
+  background-color: rgba(255, 255, 255,0.9);
+  // background-color: skyblue;
   width: 45vw;
   height: 9.8rem;
   text-align: center;
-
-  &_title {
+  padding-top: 3rem;
+  // border: 1px solid #333;
+  &_subTitle {
     color: $subTitleColor;
     @include font-size_vw(18);
+    @include margin-bottom_vw(8);
   }
-  &_detail {
+  &_title {
     color: $subTitleColor;
     position: relative;
     @include font-size-vw(12);
@@ -33,7 +35,7 @@
       content: "";
       display: inline-block;
       position: absolute;
-      background-image: url(../../../images/arrow02.png);
+      // background-image: url(../../../images/arrow01.png);
       background-repeat: no-repeat;
       width: 20px;
       height: 20px;
@@ -44,6 +46,7 @@
 }
 
 .c-contact {
+  display: block;
   border: 0.2rem solid $contactFrameColor;
   text-align: center;
   color: $contactColor;
@@ -55,10 +58,11 @@
   padding: 20px 0;
 }
 
-.c-pagetop {
+.c-pageTop {
   position: fixed;
   bottom: 3.2%;
   right: 3.2%;
+  border-radius: 50%;
   &_arrow {
     width: 4.2rem;
     height: 4.2rem;

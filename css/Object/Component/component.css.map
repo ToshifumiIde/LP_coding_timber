@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,SAAS;EACP,gBAAgB,EAAE,IAAI",
-"sources": ["../../../scss/Object/Component/component.scss"],
-"names": [],
-"file": "component.css"
-}

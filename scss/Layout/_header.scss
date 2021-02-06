@@ -3,10 +3,58 @@
 .l-header {
   @include sp {
     height: 100%;
+    // background-color: tomato;
   }
   @include pc {
     height: 64px;
+    background-color: blue;
   }
-  background-color: tomato;
   width: 100%;
+  &_logo {
+    width: 40.5vw;
+    height: auto;
+  }
+
+  .l-header_first {
+    @include sp {
+      background-color: #fff;
+    }
+    @include pc {
+      background-color: $headerLeft;
+    }
+  }
+  .l-header_second {
+    background-image: url(../../../images/pic01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+  }
+
+  &_ham {
+    background-color: $darkBrown;
+    width: 4.8rem;
+    height: 4.8rem;
+    @include pc {
+      display: none;
+    }
+    .hamLine {
+      display: inline-block;
+      background-color: #fff;
+      width: 40px;
+      height: 2px;
+    }
+  }
+  &_title {
+    @include sp {
+      text-align: center;
+    }
+    @include pc {
+      text-align: left;
+    }
+    color: #fff;
+    @include font-size_vw(20);
+    @include line-height_vw(28);
+  }
 }

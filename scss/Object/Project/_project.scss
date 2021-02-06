@@ -1,0 +1,17 @@
+.p-content {
+  width: 87vw;
+  height: 11.8rem;
+  background-color: tomato;
+  &_section1 {
+    background-color: #444;
+  }
+  &_section2 {
+    background-color: #666;
+  }
+  &_section3 {
+    background-color: #888;
+  }
+  &_section4 {
+    background-color: #aaa;
+  }
+}
