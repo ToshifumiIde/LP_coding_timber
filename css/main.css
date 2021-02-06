@@ -509,12 +509,9 @@ html {
     background-color: blue;
   }
 }
-.l-header_logo {
-  width: 40.5333333333vw;
-  height: auto;
-}
 @media (max-width: 759px) {
   .l-header .l-header_first {
+    display: flex;
     background-color: #fff;
     height: 12.2666666667vw;
   }
@@ -523,6 +520,60 @@ html {
   .l-header .l-header_first {
     background-color: #eae7df;
   }
+}
+.l-header .l-header_first_primary {
+  flex-grow: 7.15;
+}
+.l-header .l-header_first_secondary {
+  flex-grow: 1;
+}
+.l-header .l-header_first_secondary_ham {
+  background-color: #4f3f32;
+  cursor: pointer;
+  height: 12.2666666667vw;
+  position: relative;
+  width: 12.2666666667vw;
+}
+@media (min-width: 760px) {
+  .l-header .l-header_first_secondary_ham {
+    display: none;
+  }
+}
+.l-header .l-header_first_secondary_ham .hamLine {
+  position: absolute;
+  display: inline-block;
+  background-color: #fff;
+  width: 7.4666666667vw;
+  height: 0.5333333333vw;
+  left: 2.4vw;
+  transition: all 0.3s;
+}
+.l-header .l-header_first_secondary_ham .hamLine1 {
+  top: 4vw;
+}
+.l-header .l-header_first_secondary_ham .hamLine2 {
+  top: 5.8666666667vw;
+}
+.l-header .l-header_first_secondary_ham .hamLine3 {
+  top: 7.7333333333vw;
+}
+.l-header .l-header_first_secondary_ham .active.hamLine1 {
+  transform: rotate(27deg);
+  transform-origin: left;
+  width: 8.4266666667vw;
+}
+.l-header .l-header_first_secondary_ham .hamLine2.active {
+  width: 0;
+  transform-origin: left;
+}
+.l-header .l-header_first_secondary_ham .active.hamLine3 {
+  transform: rotate(-27deg);
+  transform-origin: left;
+  width: 8.4266666667vw;
+}
+.l-header .l-header_first_logo {
+  width: 40.5333333333vw;
+  height: auto;
 }
 .l-header .l-header_second {
   background-image: url(../images/pic01.jpg);
@@ -533,24 +584,7 @@ html {
   position: relative;
   width: 100%;
 }
-.l-header_ham {
-  background-color: #4f3f32;
-  width: 12.8vw;
-  height: 12.8vw;
-}
-@media (min-width: 760px) {
-  .l-header_ham {
-    display: none;
-  }
-}
-.l-header_ham .hamLine {
-  display: inline-block;
-  background-color: #fff;
-  width: 7.4666666667vw;
-  height: 0.5333333333vw;
-  margin: 0 auto;
-}
-.l-header_title {
+.l-header .l-header_second_title {
   position: absolute;
   width: 100%;
   color: #fff;
@@ -558,7 +592,7 @@ html {
   line-height: 7.4666666667vw;
 }
 @media (max-width: 759px) {
-  .l-header_title {
+  .l-header .l-header_second_title {
     left: 50%;
     text-align: center;
     top: 50%;
@@ -566,7 +600,7 @@ html {
   }
 }
 @media (min-width: 760px) {
-  .l-header_title {
+  .l-header .l-header_second_title {
     text-align: left;
   }
 }

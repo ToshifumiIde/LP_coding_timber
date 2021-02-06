@@ -9,17 +9,67 @@
     background-color: blue;
   }
   width: 100%;
-  &_logo {
-    width: get_vw(152);
-    height: auto;
-  }
   .l-header_first {
     @include sp {
+      display: flex;
       background-color: #fff;
       height: get_vw(46);
     }
     @include pc {
       background-color: $headerLeft;
+    }
+    &_primary {
+      flex-grow: 7.15;
+    }
+    &_secondary {
+      flex-grow: 1;
+      &_ham {
+        background-color: $darkBrown;
+        cursor: pointer;
+        height: get_vw(46);
+        position: relative;
+        width: get_vw(46);
+        @include pc {
+          display: none;
+        }
+        .hamLine {
+          position: absolute;
+          display: inline-block;
+          background-color: #fff;
+          width: get_vw(28);
+          height: get_vw(2);
+          left: get_vw(9);
+          transition: all 0.3s;
+        }
+        .hamLine1 {
+          top: get_vw(15);
+        }
+        .hamLine2 {
+          top: get_vw(22);
+        }
+        .hamLine3 {
+          top: get_vw(29);
+        }
+        .active.hamLine1 {
+          transform: rotate(27deg);
+          transform-origin: left;
+          width: get_vw(31.6);
+        }
+        .hamLine2.active {
+          width: 0;
+          transform-origin: left;
+        }
+        .active.hamLine3 {
+          transform: rotate(-27deg);
+          transform-origin: left;
+          width: get_vw(31.6);
+        }
+      }
+    }
+
+    &_logo {
+      width: get_vw(152);
+      height: auto;
     }
   }
   .l-header_second {
@@ -30,37 +80,21 @@
     height: get_vw(184);
     position: relative;
     width: 100%;
-  }
-
-  &_ham {
-    background-color: $darkBrown;
-    width: get_vw(48);
-    height: get_vw(48);
-    @include pc {
-      display: none;
+    &_title {
+      position: absolute;
+      width: 100%;
+      @include sp {
+        left: 50%;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      @include pc {
+        text-align: left;
+      }
+      color: #fff;
+      font-size: get_vw(20);
+      line-height: get_vw(28);
     }
-    .hamLine {
-      display: inline-block;
-      background-color: #fff;
-      width: get_vw(28);
-      height: get_vw(2);
-      margin: 0 auto;
-    }
-  }
-  &_title {
-    position: absolute;
-    width: 100%;
-    @include sp {
-      left: 50%;
-      text-align: center;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
-    @include pc {
-      text-align: left;
-    }
-    color: #fff;
-    font-size: get_vw(20);
-    line-height: get_vw(28);
   }
 }
