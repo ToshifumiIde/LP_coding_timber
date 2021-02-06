@@ -1,7 +1,6 @@
 .c-button {
   background-color: $buttonBgc;
   width: 20%;
-  // max-width: ;
   height: get_vw(46);
   line-height: 4.6rem;
   text-align: center;
@@ -15,7 +14,8 @@
 }
 
 .c-title {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.8);
+  color: $subTitleColor;
   height: get_vw(98);
   padding-top: get_vw(30);
   position: absolute;
@@ -23,45 +23,58 @@
   text-align: center;
   top: get_vw(10);
   width: get_vw(168);
+  transition: 0.2s;
+  &:hover {
+    background-color: $titleHover;
+    color: #fff;
+    // border: get_vw(2) solid #fff;
+  }
   &_subTitle {
-    color: $subTitleColor;
+    // color: $subTitleColor;
+    display: inline-block;
     font-size: get_vw(16);
+    font-weight: 550;
   }
   &_title {
-    color: $subTitleColor;
-    position: relative;
+    // color: $subTitleColor;
+    display: inline-block;
     font-size: get_vw(12);
+    position: relative;
     &:after {
       content: "";
+      background-image: url(../images/arrow01.png);
       background-size: contain;
       background-repeat: no-repeat;
-      display: inline-block;
-      height: get_vw(20);
+      height: get_vw(10);
       position: absolute;
-      background-image: url(../images/arrow01.png);
-      right: 0;
-      width: get_vw(20);
+      right: get_vw(-15);
+      top: 30%;
+      width: get_vw(10);
     }
   }
 }
-
 .c-contact {
   border: get_vw(2) solid $contactFrameColor;
   color: $contactColor;
   display: block;
   font-weight: bold;
   margin: 0 auto;
-  padding: get_vw(20) 0;
+  padding: get_vw(15) 0;
   text-align: center;
-  width: 66%;
+  width: get_vw(246);
   font-size: get_vw(18);
+  transition: 0.2s;
+  &:hover {
+    color: #fff;
+    border: get_vw(2) solid #fff;
+    background-color: $contactHoverColor;
+  }
 }
-
 .c-pageTop {
   border-radius: 50%;
-  bottom: 3.2%;
+  bottom: get_vw(12);
   position: fixed;
-  right: 3.2%;
+  right: get_vw(12);
   &_arrow {
     height: get_vw(42);
     width: get_vw(42);

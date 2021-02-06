@@ -2,7 +2,8 @@
 
 .l-footer {
   @include sp {
-    height: 7.8rem;
+    height: get_vw(77);
+    padding: get_vw(35) 0;
   }
   @include pc {
     height: 19.2rem;
@@ -11,11 +12,7 @@
   color: #fff;
   position: relative;
   .copyright {
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
-    line-height: 7.8rem;
+    font-size: get_vw(6);
     text-align: center;
   }
 }

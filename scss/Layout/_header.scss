@@ -24,12 +24,11 @@
   }
   .l-header_second {
     background-image: url(../images/pic01.jpg);
-    background-repeat: no-repeat;
     background-position: center 0;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 115%;
     height: get_vw(184);
     position: relative;
-    // width: get_vw(375);
     width: 100%;
   }
 

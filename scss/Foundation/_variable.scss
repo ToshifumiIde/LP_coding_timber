@@ -3,6 +3,7 @@
 ////////////
 
 $darkBrown: rgb(79, 63, 50);
+$darkBrownLight: rgba(79, 63, 50, 0.8);
 $brown1: rgb(77, 64, 53);
 $lightGray: rgb(238, 239, 240);
 $cream: rgb(234, 231, 223);
@@ -13,5 +14,7 @@ $hamColor: $darkBrown;
 $buttonBgc: $lightGray;
 $subTitleColor: $darkBrown;
 $contactColor: $darkBrown;
+$contactHoverColor:$darkBrownLight;
 $contactFrameColor: $darkBrown;
 $headerLeft: $cream;
+$titleHover: $darkBrownLight;

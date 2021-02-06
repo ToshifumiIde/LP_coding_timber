@@ -1,26 +1,33 @@
 .p-content {
-  width: get_vw(329);
-  height: get_vw(118);
   background-repeat: no-repeat;
+  background-size: cover;
+  height: get_vw(118);
   position: relative;
+  width: get_vw(329);
+  // &:hover {
+  //   opacity: 0.7;
+  // }
   &_section1 {
     background-image: url(../images/pic02.jpg);
-    background-position: center;
-    background-size: cover;
+    background-position: center 0%;
+    // background-size: 102%;
   }
   &_section2 {
     background-image: url(../images/pic03.jpg);
-    background-position: center;
-    background-size: cover;
+    background-position: 30% 70%;
   }
   &_section3 {
     background-image: url(../images/pic04.jpg);
-    background-position: center 0;
-    background-size: cover;
+    background-position: center 10%;
+    background-size: 102%;
   }
   &_section4 {
     background-image: url(../images/pic05.jpg);
-    background-position: center;
-    background-size: cover;
+    background-position: center 47%;
+    background-size: 104%;
   }
+}
+.p-contact {
+  font-size: get_vw(15);
+  color: $darkBrown;
 }
