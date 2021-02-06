@@ -2,8 +2,7 @@
 
 .l-header {
   @include sp {
-    height: 100%;
-    // background-color: tomato;
+    height: get_vw(230);
   }
   @include pc {
     height: 64px;
@@ -11,50 +10,58 @@
   }
   width: 100%;
   &_logo {
-    width: 40.5vw;
+    width: get_vw(152);
     height: auto;
   }
-
   .l-header_first {
     @include sp {
       background-color: #fff;
+      height: get_vw(46);
     }
     @include pc {
       background-color: $headerLeft;
     }
   }
   .l-header_second {
-    background-image: url(../../../images/pic01.jpg);
+    background-image: url(../images/pic01.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 0;
+    background-size: cover;
+    height: get_vw(184);
+    position: relative;
+    // width: get_vw(375);
     width: 100%;
-    height: 100%;
-    background-color: green;
   }
 
   &_ham {
     background-color: $darkBrown;
-    width: 4.8rem;
-    height: 4.8rem;
+    width: get_vw(48);
+    height: get_vw(48);
     @include pc {
       display: none;
     }
     .hamLine {
       display: inline-block;
       background-color: #fff;
-      width: 40px;
-      height: 2px;
+      width: get_vw(28);
+      height: get_vw(2);
+      margin: 0 auto;
     }
   }
   &_title {
+    position: absolute;
+    width: 100%;
     @include sp {
+      left: 50%;
       text-align: center;
+      top: 50%;
+      transform: translate(-50%, -50%);
     }
     @include pc {
       text-align: left;
     }
     color: #fff;
-    @include font-size_vw(20);
-    @include line-height_vw(28);
+    font-size: get_vw(20);
+    line-height: get_vw(28);
   }
 }

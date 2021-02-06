@@ -8,20 +8,6 @@ html {
   font-family: serif;
 }
 
-@function get_vw($size, $viewport: 375) {
-  $rate: 100 / $viewport;
-  @return $rate * $size * 1vw;
-}
-@mixin line-height_vw($line-height: 10) {
-  line-height: get_vw($line-height);
-}
-@mixin font-size_vw($font_size: 10) {
-  font-size: get_vw($font_size);
-}
-@mixin margin-bottom_vw($font_size: 10) {
-  margin-bottom: get_vw($font_size);
-}
-
 .br_sp {
   @include sp {
     display: inline;
@@ -30,3 +16,19 @@ html {
     display: none;
   }
 }
+
+@function get_vw($size, $viewport: 375) {
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}
+
+// @mixin line-height_vw($line-height: 10) {
+//   line-height: get_vw($line-height);
+// }
+// @mixin font-size_vw($font_size: 10) {
+//   font-size: get_vw($font_size);
+// }
+// @mixin margin-bottom_vw($font_size: 10) {
+//   margin-bottom: get_vw($font_size);
+// }
+

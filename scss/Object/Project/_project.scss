@@ -1,17 +1,26 @@
 .p-content {
-  width: 87vw;
-  height: 11.8rem;
-  background-color: tomato;
+  width: get_vw(329);
+  height: get_vw(118);
+  background-repeat: no-repeat;
+  position: relative;
   &_section1 {
-    background-color: #444;
+    background-image: url(../images/pic02.jpg);
+    background-position: center;
+    background-size: cover;
   }
   &_section2 {
-    background-color: #666;
+    background-image: url(../images/pic03.jpg);
+    background-position: center;
+    background-size: cover;
   }
   &_section3 {
-    background-color: #888;
+    background-image: url(../images/pic04.jpg);
+    background-position: center 0;
+    background-size: cover;
   }
   &_section4 {
-    background-color: #aaa;
+    background-image: url(../images/pic05.jpg);
+    background-position: center;
+    background-size: cover;
   }
 }

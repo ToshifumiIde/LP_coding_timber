@@ -3,7 +3,7 @@
 ////////////////////
 
 @mixin sp {
-  @media (max-width: 959px) {
+  @media (max-width: 759px) {
     @content;
   }
 }
@@ -15,7 +15,7 @@
 // }
 
 @mixin pc {
-  @media (min-width: 960px) {
+  @media (min-width: 760px) {
     @content;
   }
 }

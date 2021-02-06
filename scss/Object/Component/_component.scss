@@ -2,7 +2,7 @@
   background-color: $buttonBgc;
   width: 20%;
   // max-width: ;
-  height: 4.6rem;
+  height: get_vw(46);
   line-height: 4.6rem;
   text-align: center;
   &:hover {
@@ -15,56 +15,55 @@
 }
 
 .c-title {
-  background-color: rgba(255, 255, 255,0.9);
-  // background-color: skyblue;
-  width: 45vw;
-  height: 9.8rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: get_vw(98);
+  padding-top: get_vw(30);
+  position: absolute;
+  right: get_vw(10);
   text-align: center;
-  padding-top: 3rem;
-  // border: 1px solid #333;
+  top: get_vw(10);
+  width: get_vw(168);
   &_subTitle {
     color: $subTitleColor;
-    @include font-size_vw(18);
-    @include margin-bottom_vw(8);
+    font-size: get_vw(16);
   }
   &_title {
     color: $subTitleColor;
     position: relative;
-    @include font-size-vw(12);
+    font-size: get_vw(12);
     &:after {
       content: "";
-      display: inline-block;
-      position: absolute;
-      // background-image: url(../../../images/arrow01.png);
-      background-repeat: no-repeat;
-      width: 20px;
-      height: 20px;
-      right: 0;
       background-size: contain;
+      background-repeat: no-repeat;
+      display: inline-block;
+      height: get_vw(20);
+      position: absolute;
+      background-image: url(../images/arrow01.png);
+      right: 0;
+      width: get_vw(20);
     }
   }
 }
 
 .c-contact {
-  display: block;
-  border: 0.2rem solid $contactFrameColor;
-  text-align: center;
+  border: get_vw(2) solid $contactFrameColor;
   color: $contactColor;
-  width: 66%;
-  margin: 0 auto;
-  // font-size:20px;
-  @include font-size_vw(18);
+  display: block;
   font-weight: bold;
-  padding: 20px 0;
+  margin: 0 auto;
+  padding: get_vw(20) 0;
+  text-align: center;
+  width: 66%;
+  font-size: get_vw(18);
 }
 
 .c-pageTop {
-  position: fixed;
-  bottom: 3.2%;
-  right: 3.2%;
   border-radius: 50%;
+  bottom: 3.2%;
+  position: fixed;
+  right: 3.2%;
   &_arrow {
-    width: 4.2rem;
-    height: 4.2rem;
+    height: get_vw(42);
+    width: get_vw(42);
   }
 }
