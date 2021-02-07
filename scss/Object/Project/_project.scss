@@ -1,16 +1,24 @@
 .p-content {
   background-repeat: no-repeat;
   background-size: cover;
-  height: get_vw(118);
   position: relative;
-  width: get_vw(329);
-  // &:hover {
-  //   opacity: 0.7;
-  // }
+  @include sp {
+    height: get_vw(118);
+    width: get_vw(329);
+  }
+  @include pc {
+    height: get_vw(189, 1200);
+    width: 33.3%;
+  }
   &_section1 {
     background-image: url(../images/pic02.jpg);
-    background-position: center 0%;
-    // background-size: 102%;
+    @include sp {
+      background-position: center 0%;
+    }
+    @include pc {
+      background-position: center 10%;
+      width: 100%;
+    }
   }
   &_section2 {
     background-image: url(../images/pic03.jpg);
@@ -28,6 +36,12 @@
   }
 }
 .p-contact {
-  font-size: get_vw(15);
   color: $darkBrown;
+  @include sp {
+    font-size: get_vw(17);
+    line-height: get_vw(30);
+  }
+  @include pc {
+    font-size: get_vw(16, 1200);
+  }
 }

@@ -12,14 +12,14 @@
   </head>
   <body>
     <header class="l-header">
-      <div class="">
+      <div class="l-header_container">
         <div class="l-header_first">
           <div class="l-header_first_primary">
-            <h1>
+            <h1 class="l-header_first_h1">
               <img
+                alt="timber-wood-logo"
                 class="l-header_first_logo"
                 src="./images/logo.png"
-                alt="timber-wood-logo"
               />
             </h1>
           </div>
@@ -39,64 +39,64 @@
           </h2>
         </div>
       </div>
-      <div class="l-header_nav_pc">
-        <nav>
-          <ul class="">
-            <li class="c-button"><a href="#">お問い合わせ</a></li>
-            <li class="c-button"><a href="#">コンセプト</a></li>
-            <li class="c-button"><a href="#">材質のこだわり</a></li>
-            <li class="c-button"><a href="#">過ごし方</a></li>
-            <li class="c-button"><a href="#">製品紹介</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="l-header_nav_pc">
+        <ul class="l-header_nav_pc_ul">
+          <li class="c-button"><a href="#">お問い合わせ</a></li>
+          <li class="c-button"><a href="#">コンセプト</a></li>
+          <li class="c-button"><a href="#">材質のこだわり</a></li>
+          <li class="c-button"><a href="#">過ごし方</a></li>
+          <li class="c-button"><a href="#">製品紹介</a></li>
+        </ul>
+      </nav>
+      <div class=""></div>
     </header>
     <main>
-      <section></section>
       <div class="l-contents">
         <div class="u-">
-          <section class="p-content p-content_section1 u-mb_11">
+          <section class="p-content p-content_section1 u-mb_11_sp u_mb_1_pc">
             <a href="#">
               <div class="c-title">
-                <h3 class="c-title_subTitle u-mb_8">耳で建てる家。</h3>
+                <h3 class="c-title_subTitle u-mb_8_sp">耳で建てる家。</h3>
                 <h2 class="c-title_title">コンセプト</h2>
               </div>
             </a>
           </section>
-          <section class="p-content p-content_section2 u-mb_11">
-            <a href="#">
-              <div class="c-title">
-                <h3 class="c-title_subTitle u-mb_8">世代をまたぐ年輪</h3>
-                <h2 class="c-title_title">材質のこだわり</h2>
-              </div>
-            </a>
-          </section>
-          <section class="p-content p-content_section3 u-mb_11">
-            <a href="#">
-              <div class="c-title">
-                <h3 class="c-title_subTitle u-mb_8">薫る空間での一息。</h3>
-                <h2 class="c-title_title">過ごし方</h2>
-              </div>
-            </a>
-          </section>
-          <section class="p-content p-content_section4 u-mb_11">
-            <a href="#">
-              <div class="c-title">
-                <h3 class="c-title_subTitle u-mb_8">「唯一」を探す。</h3>
-                <h2 class="c-title_title">製品紹介</h2>
-              </div>
-            </a>
-          </section>
+          <div class="l-contents_flexbox">
+            <section class="p-content p-content_section2 u-mb_11_sp">
+              <a href="#">
+                <div class="c-title">
+                  <h3 class="c-title_subTitle u-mb_8_sp">世代をまたぐ年輪。</h3>
+                  <h2 class="c-title_title">材質のこだわり</h2>
+                </div>
+              </a>
+            </section>
+            <section class="p-content p-content_section3 u-mb_11_sp">
+              <a href="#">
+                <div class="c-title">
+                  <h3 class="c-title_subTitle u-mb_8_sp">薫る空間での一息。</h3>
+                  <h2 class="c-title_title">過ごし方</h2>
+                </div>
+              </a>
+            </section>
+            <section class="p-content p-content_section4 u-mb_11_sp">
+              <a href="#">
+                <div class="c-title">
+                  <h3 class="c-title_subTitle u-mb_8_sp">「唯一」を探す。</h3>
+                  <h2 class="c-title_title">製品紹介</h2>
+                </div>
+              </a>
+            </section>
+          </div>
         </div>
       </div>
       <section class="l-contact">
-        <h2 class="p-contact u-mb_25">
+        <h2 class="p-contact u-mb_19_sp u-mb_30_pc">
           ご相談・お問い合わせは
           <br class="br_sp" />
           お問い合わせフォームから
         </h2>
         <!-- <div class="c-contact"> -->
-        <a href="#" class="c-contact u-mb_25"> お問い合わせ </a>
+        <a href="#" class="c-contact">お問い合わせ</a>
         <!-- </div> -->
       </section>
     </main>
@@ -104,8 +104,8 @@
       <p class="copyright">COPYRIGHT©️ TIMBERWOOD ALLRIGHTS RESERVED.</p>
     </footer>
     <!-- <div> -->
-    <a href="#" id="js-pagetop" class="c-pageTop">
-      <img class="c-pageTop_arrow" src="./images/arrow02.png" alt="pageTop" />
+    <a class="c-pageTop" href="#" id="js-pagetop">
+      <img alt="pageTop" class="c-pageTop_arrow" src="./images/arrow02.png" />
     </a>
     <!-- </div> -->
     <script src="./js/main.js"></script>

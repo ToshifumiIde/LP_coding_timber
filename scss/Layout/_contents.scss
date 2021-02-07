@@ -1,3 +1,13 @@
 .l-contents {
-  padding: get_vw(23);
+  @include sp {
+    padding: get_vw(23);
+  }
+  @include pc {
+    padding: get_vw(60, 1200) 0;
+  }
+  &_flexbox {
+    @include pc {
+      display: flex;
+    }
+  }
 }

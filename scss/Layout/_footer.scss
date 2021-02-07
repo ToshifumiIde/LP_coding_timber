@@ -1,18 +1,21 @@
-@import "../mixin";
-
 .l-footer {
   @include sp {
     height: get_vw(77);
     padding: get_vw(35) 0;
   }
   @include pc {
-    height: 19.2rem;
+    height: get_vw(192, 1200);
   }
   background-color: $footerBgc;
   color: #fff;
   position: relative;
   .copyright {
-    font-size: get_vw(6);
+    @include sp {
+      font-size: get_vw(6);
+    }
+    @include pc {
+      font-size: get_vw(10,1200);
+    }
     text-align: center;
   }
 }

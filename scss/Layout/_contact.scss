@@ -1,4 +1,9 @@
 .l-contact {
   text-align: center;
-  padding: get_vw(23);
+  @include sp {
+    padding: get_vw(16.5) 0 get_vw(45);
+  }
+  @include pc {
+    padding: get_vw(70, 1200) 0 get_vw(134, 1200);
+  }
 }

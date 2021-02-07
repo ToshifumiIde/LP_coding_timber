@@ -1,13 +1,46 @@
-.u-mb_25 {
-  margin-bottom: get_vw(25);
+.u-mb_19_sp {
+  @include sp {
+    margin-bottom: get_vw(19);
+  }
 }
-.u-mb_11 {
-  margin-bottom: get_vw(11);
+.u-mb_11_sp {
+  @include sp {
+    margin-bottom: get_vw(11);
+  }
+  @include pc {
+    margin-bottom: 0;
+  }
 }
-.u-mb_10 {
-  margin-bottom: get_vw(10);
+.u-mb_10_sp {
+  @include sp {
+    margin-bottom: get_vw(10);
+  }
+  @include pc {
+    margin-bottom: 0;
+  }
+}
+.u-mb_8_sp {
+  @include sp {
+    margin-bottom: get_vw(8);
+  }
+  @include pc {
+    margin-bottom: 0;
+  }
 }
 
-.u-mb_8{
-  margin-bottom: get_vw(8);
+.u-mb_30_pc {
+  @include sp {
+    margin-bottom: 0;
+  }
+  @include pc {
+    margin-bottom: get_vw(30, 1200);
+  }
+}
+.u-mb_1_pc {
+  @include sp {
+    margin-bottom: 0;
+  }
+  @include pc {
+    margin-bottom: get_vw(1, 1200);
+  }
 }

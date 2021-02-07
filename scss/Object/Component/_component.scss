@@ -1,45 +1,69 @@
 .c-button {
-  background-color: $buttonBgc;
-  width: 20%;
-  height: get_vw(46);
-  line-height: 4.6rem;
-  text-align: center;
-  &:hover {
-    color: #fff;
-    background-color: $navHover;
-  }
   @include sp {
     display: none;
+  }
+  @include pc {
+    background-color: $buttonBgc;
+    cursor: pointer;
+    width: 20%;
+    height: get_vw(46, 1200);
+    line-height: get_vw(46, 1200);
+    text-align: center;
+    transition: 0.3s;
+    &:hover {
+      color: #fff;
+      background-color: $navHover;
+    }
   }
 }
 
 .c-title {
   background-color: rgba(255, 255, 255, 0.8);
   color: $subTitleColor;
-  height: get_vw(98);
-  padding-top: get_vw(30);
   position: absolute;
-  right: get_vw(10);
   text-align: center;
-  top: get_vw(10);
-  width: get_vw(168);
   transition: 0.2s;
+  @include sp {
+    height: get_vw(98);
+    padding-top: get_vw(30);
+    right: get_vw(10);
+    top: get_vw(10);
+    width: get_vw(168);
+  }
+  @include pc {
+    width: get_vw(262, 1200);
+    height: get_vw(92, 1200);
+    padding-top: get_vw(20, 1200);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   &:hover {
     background-color: $titleHover;
     color: #fff;
     // border: get_vw(2) solid #fff;
   }
   &_subTitle {
-    // color: $subTitleColor;
     display: inline-block;
-    font-size: get_vw(16);
-    font-weight: 550;
+    @include sp {
+      font-size: get_vw(16);
+      font-weight: 550;
+    }
+    @include pc {
+      display: block;
+      font-size: get_vw(22, 1200);
+    }
   }
   &_title {
-    // color: $subTitleColor;
     display: inline-block;
-    font-size: get_vw(12);
     position: relative;
+    @include sp {
+      font-size: get_vw(12);
+    }
+    @include pc {
+      font-size: get_vw(14, 1200);
+    }
+
     &:after {
       content: "";
       background-image: url(../images/arrow01.png);
@@ -54,32 +78,52 @@
   }
 }
 .c-contact {
-  border: get_vw(2) solid $contactFrameColor;
   color: $contactColor;
   display: block;
   font-weight: bold;
   margin: 0 auto;
-  padding: get_vw(15) 0;
   text-align: center;
-  width: get_vw(246);
-  font-size: get_vw(18);
   transition: 0.2s;
+  @include sp {
+    border: get_vw(2) solid $contactFrameColor;
+    font-size: get_vw(18);
+    padding: get_vw(15) 0;
+    width: get_vw(246);
+  }
+  @include pc {
+    border: get_vw(1, 1200) solid $contactFrameColor;
+    font-size: get_vw(17, 1200);
+    height: get_vw(53, 1200);
+    padding-top: get_vw(17, 1200);
+    width: get_vw(249, 1200);
+  }
   &:hover {
-    color: #fff;
-    border: get_vw(2) solid #fff;
     background-color: $contactHoverColor;
+    color: #fff;
   }
 }
 .c-pageTop {
   border-radius: 50%;
-  bottom: get_vw(12);
   display: none;
   position: fixed;
-  right: get_vw(12);
   transition: 0.8s;
+  @include sp {
+    bottom: get_vw(12);
+    right: get_vw(12);
+  }
+  @include pc {
+    bottom: get_vw(20, 1200);
+    right: get_vw(20, 1200);
+  }
   &_arrow {
-    height: get_vw(42);
-    width: get_vw(42);
+    @include sp {
+      height: get_vw(42);
+      width: get_vw(42);
+    }
+    @include pc {
+      height: get_vw(76, 1200);
+      width: get_vw(76, 1200);
+    }
   }
   &.active {
     display: inline-block;
