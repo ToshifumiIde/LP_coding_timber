@@ -73,10 +73,15 @@
 .c-pageTop {
   border-radius: 50%;
   bottom: get_vw(12);
+  display: none;
   position: fixed;
   right: get_vw(12);
+  transition: 0.8s;
   &_arrow {
     height: get_vw(42);
     width: get_vw(42);
+  }
+  &.active {
+    display: inline-block;
   }
 }

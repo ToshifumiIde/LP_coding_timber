@@ -1,6 +1,8 @@
 "use strict";
 
 {
+  // const toTop = document.querySelectorAll("");
+  // console.log(toTop);
   const pageTop = document.getElementById("js-pagetop");
   const ham = document.getElementById("js-ham");
   const hamLines = document.querySelectorAll(".hamLine");
@@ -17,4 +19,15 @@
     console.log("クリックされました");
   });
   console.log();
+
+  window.addEventListener("scroll", () => {
+    const scrollTarget = 80;
+    let scrollDistance = window.pageYOffset;
+    console.log(scrollDistance);
+    if (scrollDistance > scrollTarget) {
+      pageTop.classList.add("active");
+    } else {
+      pageTop.classList.remove("active");
+    }
+  });
 }
