@@ -5,17 +5,23 @@
   }
   @include pc {
     height: get_vw(192, 1200);
+    position: relative;
   }
   background-color: $footerBgc;
   color: #fff;
   position: relative;
   .copyright {
+    // font-family:sans-serif;
+    text-align: center;
     @include sp {
       font-size: get_vw(6);
     }
     @include pc {
-      font-size: get_vw(10,1200);
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      font-size: get_vw(10, 1200);
+      transform: translateY(-50%);
     }
-    text-align: center;
   }
 }

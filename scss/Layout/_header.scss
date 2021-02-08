@@ -24,14 +24,30 @@
     @include pc {
       background-color: $headerLeft;
       height: get_vw(512, 1200);
-      width: get_vw(240, 1200);
+      // width: get_vw(240, 1200);
+      width: 20%;
     }
     &_primary {
-      flex-grow: 7.15;
+      @include sp {
+        flex-grow: 7.15;
+      }
+      @include pc {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
     }
     &_h1 {
-      margin-top: get_vw(15);
       text-align: center;
+      @include sp {
+        margin-top: get_vw(15);
+      }
+      @include pc {
+        position: absolute;
+        top: 50%;
+        // transform: translateY(-50%);
+        width: 100%;
+      }
     }
     &_logo {
       @include sp {
@@ -39,8 +55,8 @@
         height: get_vw(15);
       }
       @include pc {
-        height: get_vw(20, 1200);
-        width: get_vw(240, 1200);
+        height: get_vw(11, 1200);
+        width: get_vw(121, 1200);
       }
     }
 
@@ -106,7 +122,8 @@
       background-position: 100% 0;
       background-size: 125%;
 
-      flex-grow: 1;
+      // flex-grow: 1;
+      width: 80%;
       height: get_vw(512, 1200);
     }
     &_title {
@@ -125,7 +142,7 @@
       @include pc {
         font-size: get_vw(35, 1200);
         text-align: left;
-        line-height: get_vw(45, 1200);
+        line-height: get_vw(48, 1200);
         top: 65.5%;
         left: 7%;
         width: 50%;

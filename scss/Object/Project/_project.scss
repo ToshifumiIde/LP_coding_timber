@@ -22,12 +22,23 @@
   }
   &_section2 {
     background-image: url(../images/pic03.jpg);
-    background-position: 30% 70%;
+    @include sp {
+      background-position: 30% 70%;
+    }
+    @include pc {
+      background-position: 30% 0%;
+    }
   }
   &_section3 {
     background-image: url(../images/pic04.jpg);
-    background-position: center 10%;
-    background-size: 102%;
+    @include sp {
+      background-position: center 10%;
+      background-size: 102%;
+    }
+    @include pc {
+      background-position: 60% 50%;
+      background-size: 113%;
+    }
   }
   &_section4 {
     background-image: url(../images/pic05.jpg);

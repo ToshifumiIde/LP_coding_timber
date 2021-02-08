@@ -5,11 +5,12 @@
   @include pc {
     background-color: $buttonBgc;
     cursor: pointer;
-    width: 20%;
+    font-size: get_vw(13, 1200);
     height: get_vw(46, 1200);
     line-height: get_vw(46, 1200);
     text-align: center;
     transition: 0.3s;
+    width: 20%;
     &:hover {
       color: #fff;
       background-color: $navHover;
