@@ -647,12 +647,11 @@ html {
     background-position: 100% 0;
     background-size: 125%;
     width: 80%;
-    height: 42.6666666667vw;
+    height: 42.5833333333vw;
   }
 }
 .l-header .l-header_second_title {
   color: #fff;
-  font-weight: bold;
   position: absolute;
   width: 100%;
 }
@@ -688,6 +687,8 @@ html {
 }
 .l-header .l-header_nav_pc_ul {
   display: flex;
+  justify-content: space-between;
+  background-color: #eeeff0;
 }
 
 .l-contact {
@@ -728,17 +729,54 @@ html {
 @media (min-width: 760px) {
   .c-button {
     background-color: #eeeff0;
-    cursor: pointer;
+    display: inline-block;
     font-size: 1.0833333333vw;
     height: 3.8333333333vw;
     line-height: 3.8333333333vw;
+    position: relative;
     text-align: center;
     transition: 0.3s;
-    width: 20%;
+  }
+  .c-button:nth-of-type(1) {
+    color: #fff;
+    background-color: #4f3f32;
+  }
+  .c-button:nth-of-type(1)::after {
+    background-image: none;
+  }
+  .c-button:nth-of-type(5)::after {
+    background-image: none;
+  }
+  .c-button:nth-of-type(3), .c-button:nth-of-type(5) {
+    width: 20vw;
+  }
+  .c-button:nth-of-type(2) {
+    width: 19.8333333333vw;
+  }
+  .c-button:nth-of-type(1), .c-button:nth-of-type(4) {
+    width: 19.9166666667vw;
+  }
+  .c-button::after {
+    content: "";
+    background-image: linear-gradient(to bottom, #4f3f32 0vw, #4f3f32 0.0833333333vw, transparent 0.0833333333vw, transparent 0.1666666667vw);
+    background-color: #eeeff0;
+    background-repeat: repeat-y;
+    background-size: 0.0833333333vw 0.1666666667vw;
+    display: inline-block;
+    height: 2.0833333333vw;
+    position: absolute;
+    right: -0.0833333333vw;
+    top: 0.8333333333vw;
+    width: 0.0833333333vw;
   }
   .c-button:hover {
     color: #fff;
     background-color: #4f3f32;
+  }
+  .c-button a {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -891,7 +929,8 @@ html {
 @media (min-width: 760px) {
   .p-content {
     height: 15.75vw;
-    width: 33.3%;
+    width: 33.25vw;
+    margin-right: 0.0833333333vw;
   }
 }
 .p-content_section1 {
@@ -938,8 +977,18 @@ html {
 }
 .p-content_section4 {
   background-image: url(../images/pic05.jpg);
-  background-position: center 47%;
-  background-size: 104%;
+}
+@media (max-width: 759px) {
+  .p-content_section4 {
+    background-size: 104%;
+    background-position: center 47%;
+  }
+}
+@media (min-width: 760px) {
+  .p-content_section4 {
+    background-size: 106%;
+    background-position: 63% 53%;
+  }
 }
 
 .p-contact {

@@ -8,6 +8,7 @@
   &_flexbox {
     @include pc {
       display: flex;
+      // justify-content: space-around;
     }
   }
 }

@@ -8,7 +8,8 @@
   }
   @include pc {
     height: get_vw(189, 1200);
-    width: 33.3%;
+    width: get_vw(399, 1200);
+    margin-right: get_vw(1, 1200);
   }
   &_section1 {
     background-image: url(../images/pic02.jpg);
@@ -42,8 +43,15 @@
   }
   &_section4 {
     background-image: url(../images/pic05.jpg);
-    background-position: center 47%;
-    background-size: 104%;
+    @include sp {
+      background-size: 104%;
+      background-position: center 47%;
+    }
+    @include pc {
+      
+      background-size: 106%;
+      background-position: 63% 53%;
+    }
   }
 }
 .p-contact {
