@@ -1,3 +1,11 @@
+.c-sitemap_listItem {
+  @include pc {
+    display: inline-block;
+    font-size: get_vw(12, 1200);
+    border-bottom: solid get_vw(1, 1200) $siteMapLine;
+  }
+}
+
 .c-button {
   @include sp {
     display: none;
@@ -76,10 +84,14 @@
   transition: 0.2s;
   @include sp {
     height: get_vw(98);
-    padding-top: get_vw(30);
     right: get_vw(10);
+    padding-top: get_vw(30);
     top: get_vw(10);
     width: get_vw(168);
+    // a {
+    //   height: 100%;
+    //   width: 100%;
+    // }
   }
   @include pc {
     width: get_vw(262, 1200);

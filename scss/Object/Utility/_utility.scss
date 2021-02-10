@@ -36,6 +36,15 @@
     margin-bottom: get_vw(30, 1200);
   }
 }
+.u-mb_15_pc {
+  @include sp {
+    margin-bottom: 0;
+  }
+  @include pc {
+    margin-bottom: get_vw(15, 1200);
+  }
+}
+
 .u-mb_1_pc {
   @include sp {
     margin-bottom: 0;

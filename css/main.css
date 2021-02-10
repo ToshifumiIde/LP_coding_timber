@@ -721,6 +721,14 @@ html {
   }
 }
 
+@media (min-width: 760px) {
+  .c-sitemap_listItem {
+    display: inline-block;
+    font-size: 1vw;
+    border-bottom: solid 0.0833333333vw #a6a6a6;
+  }
+}
+
 @media (max-width: 759px) {
   .c-button {
     display: none;
@@ -790,8 +798,8 @@ html {
 @media (max-width: 759px) {
   .c-title {
     height: 26.1333333333vw;
-    padding-top: 8vw;
     right: 2.6666666667vw;
+    padding-top: 8vw;
     top: 2.6666666667vw;
     width: 44.8vw;
   }
@@ -1053,6 +1061,17 @@ html {
 @media (min-width: 760px) {
   .u-mb_30_pc {
     margin-bottom: 2.5vw;
+  }
+}
+
+@media (max-width: 759px) {
+  .u-mb_15_pc {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 760px) {
+  .u-mb_15_pc {
+    margin-bottom: 1.25vw;
   }
 }
 
