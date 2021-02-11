@@ -48,7 +48,6 @@
       background-position: center 47%;
     }
     @include pc {
-      
       background-size: 106%;
       background-position: 63% 53%;
     }
@@ -62,5 +61,15 @@
   }
   @include pc {
     font-size: get_vw(16, 1200);
+  }
+}
+
+.p-sitemap_list {
+  @include sp {
+    display: none;
+  }
+  @include pc {
+    display: flex;
+    justify-content: flex-end;
   }
 }

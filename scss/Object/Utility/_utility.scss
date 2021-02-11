@@ -28,12 +28,28 @@
   }
 }
 
+.u-mb_78_pc {
+  @include sp {
+    margin-bottom: 0;
+  }
+  @include pc {
+    margin-bottom: get_vw(78, 1200);
+  }
+}
 .u-mb_30_pc {
   @include sp {
     margin-bottom: 0;
   }
   @include pc {
     margin-bottom: get_vw(30, 1200);
+  }
+}
+.u-mb_20_pc {
+  @include sp {
+    margin-bottom: 0;
+  }
+  @include pc {
+    margin-bottom: get_vw(20, 1200);
   }
 }
 .u-mb_15_pc {
@@ -44,12 +60,27 @@
     margin-bottom: get_vw(15, 1200);
   }
 }
-
 .u-mb_1_pc {
-  @include sp {
-    margin-bottom: 0;
-  }
+  // @include sp {
+  //   margin-bottom: 0;
+  // }
   @include pc {
     margin-bottom: get_vw(1, 1200);
+  }
+}
+
+.u-mr_34_pc {
+  @include pc {
+    margin-right: get_vw(34, 1200);
+  }
+}
+.u-mr_22_pc {
+  @include pc {
+    margin-right: get_vw(22, 1200);
+  }
+}
+.u-mr_21_pc {
+  @include pc {
+    margin-right: get_vw(21, 1200);
   }
 }

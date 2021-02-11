@@ -3,6 +3,22 @@
     display: inline-block;
     font-size: get_vw(12, 1200);
     border-bottom: solid get_vw(1, 1200) $siteMapLine;
+    position: relative;
+    &::before {
+      content: "";
+      background-image: url(../images/arrow03.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 100%;
+      width: get_vw(7, 1200);
+      height: 100%;
+      height: get_vw(6, 1200);
+      margin-right: get_vw(6, 1200);
+      position: absolute;
+      top: 50%;
+      left: get_vw(-6, 1200);
+      transform: translate(-50%, -50%);
+    }
   }
 }
 
@@ -21,6 +37,17 @@
     transition: 0.3s;
     // width: 20%;
     // width: get_vw(240, 1200);
+    &:nth-of-type(1),
+    &:nth-of-type(3),
+    &:nth-of-type(5) {
+      width: get_vw(240, 1200);
+    }
+    &:nth-of-type(2) {
+      width: get_vw(238, 1200);
+    }
+    &:nth-of-type(4) {
+      width: get_vw(239, 1200);
+    }
     &:nth-of-type(1) {
       color: #fff;
       background-color: $navHover;
@@ -32,17 +59,6 @@
       &::after {
         background-image: none;
       }
-    }
-    &:nth-of-type(3),
-    &:nth-of-type(5) {
-      width: get_vw(240, 1200);
-    }
-    &:nth-of-type(2) {
-      width: get_vw(238, 1200);
-    }
-    &:nth-of-type(1),
-    &:nth-of-type(4) {
-      width: get_vw(239, 1200);
     }
 
     &::after {
@@ -167,9 +183,10 @@
 }
 .c-pageTop {
   border-radius: 50%;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   position: fixed;
-  transition: 0.8s;
+  transition: all 0.5s;
   @include sp {
     bottom: get_vw(12);
     right: get_vw(12);
@@ -189,6 +206,7 @@
     }
   }
   &.active {
-    display: inline-block;
+    opacity: 1;
+    visibility: visible;
   }
 }

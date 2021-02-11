@@ -7,6 +7,7 @@
   const ham = document.getElementById("js-ham");
   const hamLines = document.querySelectorAll(".hamLine");
   let aTags = document.getElementsByTagName("a");
+  const pcWidth = 760;
 
   console.log(aTags);
 
@@ -20,8 +21,8 @@
     });
   });
 
+  
   pageTop.addEventListener("click", (e) => {
-    // if (hamLines.classList.contain("active")) {
     hamLines.forEach((hamLine) => {
       hamLine.classList.remove("active");
     });
@@ -33,8 +34,8 @@
   //矢印の表示非表示切替
   window.addEventListener("scroll", () => {
     let nowY = window.pageYOffset;
-    const scrollTarget = 80;
-    console.log(nowY);
+    const scrollTarget = window.innerWidth > pcWidth ? 200 : 80;
+    // console.log(nowY);
     if (nowY > scrollTarget) {
       pageTop.classList.add("active");
     } else {
