@@ -1,6 +1,7 @@
 .l-header {
   @include sp {
     height: get_vw(230);
+    z-index: 1000;
   }
   @include pc {
     // height: get_vw(550, 1200);
@@ -38,7 +39,10 @@
     &_h1 {
       text-align: center;
       @include sp {
-        margin-top: get_vw(15);
+        position: relative;
+        // margin-top: get_vw(15);
+        width: 100%;
+        height: 100%;
       }
       @include pc {
         position: absolute;
@@ -49,8 +53,11 @@
     }
     &_logo {
       @include sp {
+        position: absolute;
         width: get_vw(152);
         height: get_vw(15);
+        top: get_vw(15);
+        left: get_vw(112);
       }
       @include pc {
         height: get_vw(11, 1200);
@@ -156,7 +163,7 @@
     }
     &_ul {
       display: flex;
-      justify-content: space-between;
+      // justify-content: space-between;
       background-color: $buttonBgc;
     }
   }

@@ -1,27 +1,12 @@
 .l-footer {
+  background-color: $footerBgc;
+  color: #fff;
+  position: relative;
   @include sp {
     height: get_vw(77);
     padding: get_vw(35) 0;
   }
   @include pc {
-    height: get_vw(192, 1200);
-    position: relative;
-  }
-  background-color: $footerBgc;
-  color: #fff;
-  position: relative;
-  .copyright {
-    // font-family:sans-serif;
-    text-align: center;
-    @include sp {
-      font-size: get_vw(6);
-    }
-    @include pc {
-      position: absolute;
-      top: 50%;
-      width: 100%;
-      font-size: get_vw(10, 1200);
-      transform: translateY(-50%);
-    }
+    height: get_vw(190, 1200);
   }
 }

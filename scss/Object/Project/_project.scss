@@ -2,6 +2,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  margin: 0 auto;
   @include sp {
     height: get_vw(118);
     width: get_vw(329);
@@ -17,7 +18,7 @@
       background-position: center 0%;
     }
     @include pc {
-      background-position: center 10%;
+      background-position: center 6%;
       width: 100%;
     }
   }
