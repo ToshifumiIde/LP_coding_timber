@@ -1,4 +1,4 @@
-.c-button {
+.c-button_pc {
   @include sp {
     display: none;
   }
@@ -9,6 +9,7 @@
       height: 100%;
     }
     background-color: $buttonBgc;
+    color: $buttonText;
     display: inline-block;
     font-size: get_vw(13, 1200);
     height: get_vw(46, 1200);
@@ -63,6 +64,29 @@
       color: #fff;
       background-color: $navHover;
     }
+  }
+}
+
+.c-button_sp {
+  @include sp {
+    background-color: $buttonBgc;
+    color: $buttonText;
+    font-size: get_vw(14);
+    font-weight: bold;
+    height: get_vw(46);
+    line-height: get_vw(46);
+    text-align: center;
+    width: 100%;
+    &:hover {
+      // color: #fff;
+      background-color: #fff;
+    }
+  }
+  a {
+    display: inline-block;
+    height: 100%;
+    user-select: none;
+    width: 100%;
   }
 }
 
@@ -194,7 +218,6 @@
       letter-spacing: get_vw(0.5);
     }
     @include pc {
-      // background-color: tomato;
       text-align: center;
       font-size: get_vw(24, 1200);
     }
