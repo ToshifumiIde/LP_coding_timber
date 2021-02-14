@@ -122,7 +122,7 @@
     position: relative;
     width: 100%;
     @include sp {
-      background-position: center 0;
+      background-position: 53% 0;
       background-size: 115%;
       height: get_vw(184);
       margin-top: get_vw(46);
@@ -137,22 +137,25 @@
     }
     &_title {
       color: #fff;
-      // font-weight: bold;
+      font-weight: bold;
       position: absolute;
       width: 100%;
       @include sp {
         font-size: get_vw(20);
-        left: 50%;
+        left: 51%;
         line-height: get_vw(28);
+        letter-spacing: get_vw(1.4);
         text-align: center;
-        top: 50%;
+        top: 50.5%;
         transform: translate(-50%, -50%);
+        width: 90%;
       }
       @include pc {
-        font-size: get_vw(35, 1200);
+        font-size: get_vw(34, 1200);
+        letter-spacing: get_vw(1, 1200);
         text-align: left;
         line-height: get_vw(48, 1200);
-        top: 65.5%;
+        top: 65.3%;
         left: 7%;
         width: 50%;
       }

@@ -34,8 +34,8 @@
   &_section3 {
     background-image: url(../images/pic04.jpg);
     @include sp {
-      background-position: center 10%;
-      background-size: 102%;
+      background-position: 55% 11%;
+      background-size: 101%;
     }
     @include pc {
       background-position: 60% 50%;
@@ -45,8 +45,8 @@
   &_section4 {
     background-image: url(../images/pic05.jpg);
     @include sp {
-      background-size: 104%;
-      background-position: center 47%;
+      background-size: 103%;
+      background-position: 67% 47%;
     }
     @include pc {
       background-size: 106%;
@@ -79,7 +79,7 @@
     // height: 100%;
     position: fixed;
     transition: 0.4s;
-    top:get_vw(-276);
+    top: get_vw(-276);
     z-index: 900;
   }
   @include pc {

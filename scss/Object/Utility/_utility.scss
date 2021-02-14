@@ -28,43 +28,7 @@
   }
 }
 
-.u-mb_45_sp {
-  @include sp {
-    margin-bottom: get_vw(45);
-  }
-}
-.u-mb_40_sp {
-  @include sp {
-    margin-bottom: get_vw(40);
-  }
-}
-
-.u-mb_23_sp {
-  @include sp {
-    margin-bottom: get_vw(23);
-  }
-}
-.u-mb_19_sp {
-  @include sp {
-    margin-bottom: get_vw(19);
-  }
-}
-.u-mb_11_sp {
-  @include sp {
-    margin-bottom: get_vw(11);
-  }
-}
-.u-mb_10_sp {
-  @include sp {
-    margin-bottom: get_vw(10);
-  }
-}
-.u-mb_8_sp {
-  @include sp {
-    margin-bottom: get_vw(8);
-  }
-}
-
+//pc margin-bottom//
 .u-mb_134_pc {
   @include pc {
     margin-bottom: get_vw(134, 1200);
@@ -121,6 +85,7 @@
   }
 }
 
+//pc margin-right//
 .u-mr_34_pc {
   @include pc {
     margin-right: get_vw(34, 1200);
@@ -134,5 +99,129 @@
 .u-mr_21_pc {
   @include pc {
     margin-right: get_vw(21, 1200);
+  }
+}
+
+//pc padding-left//
+.u-pl_32_pc {
+  @include pc {
+    padding-left: get_vw(32, 1200);
+  }
+}
+.u-pl_30_pc {
+  @include pc {
+    padding-left: get_vw(30, 1200);
+  }
+}
+.u-pl_28_pc {
+  @include pc {
+    padding-left: get_vw(28, 1200);
+  }
+}
+.u-pl_24_pc {
+  @include pc {
+    padding-left: get_vw(24, 1200);
+  }
+}
+.u-pl_20_pc {
+  @include pc {
+    padding-left: get_vw(20, 1200);
+  }
+}
+.u-pl_18_pc {
+  @include pc {
+    padding-left: get_vw(18, 1200);
+  }
+}
+.u-pl_12_pc {
+  @include pc {
+    padding-left: get_vw(12, 1200);
+  }
+}
+
+//sp margin-bottom//
+.u-mb_45_sp {
+  @include sp {
+    margin-bottom: get_vw(45);
+  }
+}
+.u-mb_40_sp {
+  @include sp {
+    margin-bottom: get_vw(40);
+  }
+}
+.u-mb_23_sp {
+  @include sp {
+    margin-bottom: get_vw(23);
+  }
+}
+.u-mb_19_sp {
+  @include sp {
+    margin-bottom: get_vw(19);
+  }
+}
+.u-mb_11_sp {
+  @include sp {
+    margin-bottom: get_vw(11);
+  }
+}
+.u-mb_10_sp {
+  @include sp {
+    margin-bottom: get_vw(10);
+  }
+}
+.u-mb_8_sp {
+  @include sp {
+    margin-bottom: get_vw(8);
+  }
+}
+
+//sp padding-left//
+.u-pl_12_sp {
+  @include sp {
+    padding-left: get_vw(12);
+  }
+}
+.u-pl_11_sp {
+  @include sp {
+    padding-left: get_vw(11);
+  }
+}
+
+//sp padding-right//
+.u-pr_18_sp {
+  @include sp {
+    padding-right: get_vw(18);
+  }
+}
+
+.u-pr_16_sp {
+  @include sp {
+    padding-right: get_vw(16);
+  }
+}
+.u-pr_15_sp {
+  @include sp {
+    padding-right: get_vw(15);
+  }
+}
+.u-pr_14_sp {
+  @include sp {
+    padding-right: get_vw(14);
+  }
+}
+.u-pr_13_sp {
+  @include sp {
+    padding-right: get_vw(13);
+  }
+}
+.u-pr_12_sp {
+  @include sp {
+    padding-right: get_vw(12);
+  }
+}
+.u-pr_11_sp {
+  @include sp {
+    padding-right: get_vw(11);
   }
 }
