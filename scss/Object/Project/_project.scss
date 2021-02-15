@@ -28,7 +28,8 @@
       background-position: 30% 70%;
     }
     @include pc {
-      background-position: 30% 0%;
+      background-position: 22% 20%;
+      background-size: 110%;
     }
   }
   &_section3 {
@@ -50,7 +51,7 @@
     }
     @include pc {
       background-size: 106%;
-      background-position: 63% 53%;
+      background-position: 60% 51%;
     }
   }
 }

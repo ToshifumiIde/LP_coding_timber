@@ -139,6 +139,14 @@
   }
 }
 
+
+.u-pr_8_pc{
+  @include pc {
+    padding-right: get_vw(8, 1200);
+  }
+  
+}
+
 //sp margin-bottom//
 .u-mb_45_sp {
   @include sp {
